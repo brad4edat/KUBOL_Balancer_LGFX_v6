@@ -49,15 +49,15 @@ class LGFX : public lgfx::LGFX_Device {
 
     {
       auto cfg = _touch_instance.config();
-      cfg.x_min = 0;
-      cfg.x_max = 239;
-      cfg.y_min = 0;
-      cfg.y_max = 319;
+      cfg.x_min = 395;
+      cfg.x_max = 3800;
+      cfg.y_min = 240;
+      cfg.y_max = 3800;
       cfg.pin_int = 27;
       cfg.bus_shared = true;
-      cfg.offset_rotation = 0;
+      cfg.offset_rotation = 4;
       cfg.spi_host = VSPI_HOST;
-      cfg.freq = 1000000;
+      cfg.freq = 2000000;
       cfg.pin_sclk = 18;
       cfg.pin_mosi = 23;
       cfg.pin_miso = 19;
