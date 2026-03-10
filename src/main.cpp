@@ -42,7 +42,7 @@ void setup() {
   Serial.begin(115200);
 
   tft.init();
-  tft.setRotation(1);  // Landscape: 320x240
+  tft.setRotation(3);  // Landscape: 320x240
 
   ui::drawStartupScreen();
 }
